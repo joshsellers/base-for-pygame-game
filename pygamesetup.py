@@ -36,7 +36,7 @@ if pygame_modules_have_loaded():
             pygame.quit()
             sys.exit()
         elif key_name == "f3":
-            pygame.show_fps = True if not pygame.show_fps else False
+            pygame.show_fps = not pygame.show_fps
 
     def update(game_screen, time):
 
